@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+{% load static%}
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>About</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Rahul Gaikwad</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <style>
+    .Social links {
+      margin: 10px;
+
+    }
+
+    .fa-color {
+      color: black;
+
+    }
+
+    a:hover i {
+      transform: scale(1.1);
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+
+  <body>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+          <div class="card card-body h-100  border-info" id="profile-wrapper">
+            <img id="profile-pic" src="{%static 'images/Photo.jpg' %}">
+            <hr>
+            <h3>Rahul Gaikwad</h3>
+            <div class="Social links">
+              <script src="https://kit.fontawesome.com/c98c0981e4.js" crossorigin="anonymous"></script>
+              <a class="social-icon" href="mailto:gaikwadrahul28998@gmail.com" target="_blank">
+                <i class="fas fa-3x fa-envelope-square fa-color"></i>
+              </a>
+
+              <a class="social-icon" href="https://www.linkedin.com/in/rahul-gaikwad-380b39172/" target="_blank">
+                <i class="fab fa-3x fa-linkedin"></i>
+              </a>
+
+              <a class="social-icon" href="https://github.com/GaikwadRahul" target="_blank">
+                <i class="fab fa-3x fa-github-square fa-color"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <div class="card card-body h-100  border-info">
+            <h2>Biography</h2>
+            <hr>
+            <h5>Hi, I'm Rahul Gaikwad.<h5>
+                <p>I have a Bachelors degree in ECE from Walchand Institute of Technology, Solapur.</p>
+                <p>Pythonist here. Passionate about building delightful and impactful products that make a difference.
+                  Excited about tough problems, and always seeking to learn something new. I'm a self-driven, motivated,
+                  and independent learner who discovered my passion for programming and software engineering midway
+                  through Electronics degree.</p>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+    <div class="card text-center">
+      <div class="card-header">
+        <h3>My Skills</h3>
+      </div>
+      <div class="card-body h-150">
+        <div class="Skills">
+          <img src="{%static 'images/python.png' %}">
+          <img src="{%static 'images/Django.png' %}">
+          <img src="{%static 'images/MySQL.png' %}">
+          <img src="{%static 'images/Aws.png' %}">
+          <img src="{%static 'images/Docker.png' %}">
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
